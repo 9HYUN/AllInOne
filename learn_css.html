@@ -2,14 +2,29 @@
 
 <head>
   <style type="text/css">
-    p {
+    /* 하위 선택자 */
+    #item-list p {
+      color: red;
+    }
+
+    /* 자식 선택자 */
+    #item-list>p {
+      color: blue;
+    }
+
+    /* 자식 선택자 */
+    #item-list>p {
+      color: blue;
+    }
+
+    /* p {
       color: orange;
     }
 
     #id-test,
     .class-test {
       color: blue;
-    }
+    } */
 
     /* .class-test {
         color: red;
@@ -18,11 +33,21 @@
 </head>
 
 <body>
-  <p>Hello 99</p>
+  <!-- <p>Hello 99</p>
   <p>Hello Every One</p>
   <div id="id-test">id가 적용된다</div>
   <div class="class-test">클래스가 적용된다.</div>
-  <div class="class-test">클래스기 적용된다.</div>
+  <div class="class-test">클래스기 적용된다.</div> -->
+  <div id="item-list">
+    <p>첫번째 자식 아이템1</p>
+    <p>첫번째 자식 아이템2</p>
+    <div>
+      <p>두번째 자식 아이템1</p>
+      <p>두번째 자식 아이템2</p>
+    </div>
+
+  </div>
+
 </body>
 
 </html>
